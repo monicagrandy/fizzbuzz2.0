@@ -13,37 +13,39 @@
 	}
 }
 */
+// function fizzbuzz() {
+// 	var userNum = parseInt(prompt("Please provide a whole number"));
+// 	if(isNaN(userNum)) { //check to make sure the string can be converted to an integer
+// 		alert("That is not a number");
+// 	}
+// 	else if(userNum % 1 != 0) {
+// 		alert("No decimals please!");
+// 	};
+// 	fizzbuzz2(userNum);
+// }
 
-var userNum = prompt("Please provide a whole number"),
-	maxnum = +userNum;
-	if(isNaN(maxnum)) { //check to make sure the string can be converted to an integer
-		alert("That is not a number");
-	}
-	else if(maxnum % 1 != 0) {
-		alert("No decimals please!");
-	}
-//else run this code
-function fizzbuzz2(maxnum){
-	function check(n) {
-		var msg = "";
-		if(n % 3 == 0) {msg += "Fizz"};
-		if(n % 5 == 0) {msg += "Buzz"};
-		return msg || n;
-	}
-	var i = 1;
-	while(i <= maxnum) {
-		console.log(check(i));
-		i++;
-	}
-}
-
-
-console.log(fizzbuzz2(maxnum));
-
+// //else run this code
+// function fizzbuzz2(userNum){
+// 	function check(n) {
+// 		var msg = "";
+// 		if(n % 3 == 0) {msg += "Fizz"};
+// 		if(n % 5 == 0) {msg += "Buzz"};
+// 		return msg || n;
+// 	}
+// 	var i = 1;
+// 	while(i <= userNum) {
+// 		console.log(check(i));
+// 		i++;
+// 	}
+// }
 
 
-/*
-var userNum = document.getElementById("numInput"),
+// console.log(fizzbuzz2(userNum));
+
+
+
+
+var userNum = document.getElementById("numInput").value,
 	maxnum = +userNum;
 	if(isNaN(maxnum)) { //check to make sure the string can be converted to an integer
 	alert("That is not a number");
@@ -52,7 +54,6 @@ var userNum = document.getElementById("numInput"),
 		alert("No decimals please!");
 	}
 	
-
 function fizzbuzz2(maxnum){
 	
 	function check(n) {
@@ -68,8 +69,7 @@ function fizzbuzz2(maxnum){
 	}
 }
 
-
 console.log(fizzbuzz2(maxnum));
-*/
+
 
 
